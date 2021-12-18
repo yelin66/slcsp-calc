@@ -1,0 +1,23 @@
+Given the 6-week period for the application improvement, 3 sprints with 2 weeks in each sprint can be planned for the works.
+
+1st sprint will be focused on initial look up performance improvement & the favorite widgets importing interface update design
+- As the DBRepo.FindByZip query took near 42% of the LocationController#find time with 6 queries totally, work on fine tuning 
+  the query to improve the average query time & finding potential opportunity to reduce the number of queries used.
+- There is about 50% of LocationController#find time is spent somewhere else other than database queries, work on profiling
+  the remaining time to identify potential opportunities for improvements.
+- Work on profiling the IntegrationController#lookup with details on query time, number of queries, and time spent outside queries, to
+  identify potential opportunities for improvements.
+- Design the widget importing interface update to include the feedback about import process in the response payload.
+
+2nd sprint will be focused on user validation of the initial performance improvement, further performance improvements implementation,
+and widget importing interface update implementation
+- When permitted by the deployment window, deploy the initial performance improvement, and collect user feedbacks for validation.
+- Implement further performance improvements based on profiling results from 1st sprint.
+- Implement the updated widget importing interface with widget import feedback in the response payload.
+
+3rd spring will be focused on internal and user validation of the performance improvements & interface enhancement
+- When permitted by the deployment window, deploy all updates from 2nd sprint.
+- Run internal validation on performance improvements & new widget importing interface.
+- Collect user feedback on the performance improvements & interface enhancement.
+- Wrap up the works with internal testing report & user feedback addressed.
+

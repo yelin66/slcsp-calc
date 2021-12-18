@@ -1,0 +1,10 @@
+Homework for SLCSP
+
+Prerequisite: a Java 8 or above SDK is installed, and PATH env variable is set up to run java/javac
+
+After unzip the file, nagivate to the "homework" folder.
+From a Unix-like command line, run the following command:
+$ sh run.sh
+From a Windows command line, run the following command:
+> run
+
